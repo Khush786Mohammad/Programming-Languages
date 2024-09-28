@@ -1,0 +1,2 @@
+keeda.jump();
+        keeda.crawl();

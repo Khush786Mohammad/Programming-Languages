@@ -23,7 +23,8 @@ public class condition{
 
         //while loops
         int guessNumber;
-        int number = 23;
+        Random rand = new Random();
+        int number = rand.nextInt(100);
         do{
             System.out.println("Guess the number");
             guessNumber = sc.nextInt();
