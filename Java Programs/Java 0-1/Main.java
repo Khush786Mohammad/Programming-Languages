@@ -13,5 +13,10 @@ public class Main {
         myCar.changePaintColor(Color.GREEN);
 
         System.out.println("My Car Color is " + myCar.paintColor);
+
+        double myCarSpeed = 50;
+        myCarSpeed = myCar.speedingUp(myCarSpeed);
+
+        System.out.println(myCarSpeed);
     }
 }

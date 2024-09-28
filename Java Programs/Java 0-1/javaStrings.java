@@ -17,5 +17,9 @@ public class javaStrings{
 
         System.out.println("Your Graduation degree is in " + degree);
 
+        String s = "fog";
+        String replaced = s.replace('f', 'd');
+        System.out.println(replaced);
+
     }
 }
