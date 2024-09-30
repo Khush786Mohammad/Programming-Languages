@@ -43,5 +43,7 @@ public class Switch {
             System.out.println("Ambiguous Operation");
 
         }
+
+        sc.close();
     }
 }

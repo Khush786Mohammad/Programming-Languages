@@ -38,5 +38,7 @@ public class condition{
                 System.out.println("yee");
             }
         }while(number != guessNumber);
+
+        sc.close();
     }
 }

@@ -21,5 +21,7 @@ public class javaStrings{
         String replaced = s.replace('f', 'd');
         System.out.println(replaced);
 
+        //closing scanner object
+        sc.close();
     }
 }
