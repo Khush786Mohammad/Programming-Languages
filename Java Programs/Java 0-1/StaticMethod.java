@@ -8,6 +8,7 @@ class helper{
     
     public helper(){
         System.out.println("Default Constructor");
+        m2();
     }
     // static method
     public static int add(int a , int b){
@@ -27,7 +28,7 @@ class helper{
 
         //static methods cannot directly call non-static methods
 
-        //m2(); // Error
+        // m2(); // Error
 
         System.out.println(add(100,200));
         helper h1 = new helper();
