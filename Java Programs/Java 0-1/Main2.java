@@ -1,6 +1,6 @@
 public class Main2 {
     public static void main(String[] args){
-        Cat myCat = new Cat("Bilauta",2);
+        Cat myCat = new Cat("Bilauta",3);
         myCat.meow();
 
         int newAge = myCat.age(2);
