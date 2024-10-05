@@ -37,5 +37,11 @@ public class AccessModifiers {
         dog1.showLegs();
         // System.out.println(animal1.name + dog1.name);
         System.out.println(animal1.legs + " " +dog1.legs);
+
+        String s1 = new String("Khush");
+        String s2 = new String("Khush");
+
+        System.out.println(s1 == s2);
+        System.out.println(s1.equals(s2));
     }
 }
