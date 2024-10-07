@@ -1,0 +1,5 @@
+GO to View
+Command Pelette
+Search Setting
+Select Open User Setting(JSON)
+Delete those line number
