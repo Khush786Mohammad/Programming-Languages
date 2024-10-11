@@ -6,6 +6,7 @@ public class Hash_Map {
         map.put(1,"Arradeem");
         map.put(16,"Lawrech");
         map.put(21,"Manya");
+        map.put(21,"sana");
 
         System.out.println("Map size is " +map.size());
         System.out.println(map.get(14));

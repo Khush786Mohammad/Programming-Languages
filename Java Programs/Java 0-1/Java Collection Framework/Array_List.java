@@ -9,6 +9,8 @@ public class Array_List{
         list.add(30);
         list.add(3,100);
 
+        System.out.println(list.isEmpty());
+
         for(int i = 0 ; i<list.size() ; i++){
             System.out.println(list.get(i));
         }
