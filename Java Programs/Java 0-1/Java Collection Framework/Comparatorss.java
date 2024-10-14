@@ -34,7 +34,7 @@ public class Comparatorss {
         Comparator<Integer> customs1 = (s1,s2) -> s2.compareTo(s1);
         Comparator<Integer> customs2 = (s1,s2) -> Integer.compare(s2, s1);
         Comparator<Integer> customs3 = Comparator.reverseOrder();
-        Comparator<Books> booksById = Comparator.comparingInt(Books::getId).thenComparing(Books::getPages);
+        // Comparator<Books> booksById = Comparator.comparingInt(Books::getId).thenComparing(Books::getPages);
         Comparator<Books> booksByIdThenByHighestPages = Comparator.comparingInt(Books::getId).thenComparing(Comparator.comparingInt(Books::getPages).reversed());
 
     

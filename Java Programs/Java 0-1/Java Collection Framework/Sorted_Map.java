@@ -6,7 +6,6 @@ public class Sorted_Map {
     public static void main(String[] args){
         Map<Integer,String> linkedHashMap = new LinkedHashMap<Integer,String>();
         Map<Integer,String> treeMap = new TreeMap<Integer,String>();
-
         testMap(linkedHashMap);
         testMap(treeMap);
     }
@@ -18,6 +17,7 @@ public class Sorted_Map {
         map.put(9,"Nine");
         map.put(3,"Three");
         map.put(7,"Seven");
+        map.put(0,"Zero");
     
         for(Map.Entry<Integer,String> entry:map.entrySet()){
             int key = entry.getKey();

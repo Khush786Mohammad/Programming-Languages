@@ -110,7 +110,7 @@ public class Solution {
             Book book = new Book(id,title,author,price);
             booksArray[i] = book;
         }
-        
+        sc.close();
         sortBooksByPrice(booksArray);
         
         for(int i = 0 ; i<4 ; i++){
