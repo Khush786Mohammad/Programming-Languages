@@ -1,0 +1,42 @@
+Problem1: Given a number print the reverse of it
+eg. num--> 12345
+    o/p--> 54321
+
+Problem2:
+Create a Class Medicine with the below attributes:
+medicine name – String
+batch no – String
+disease – String
+price – int
+Write getters, setters, and parameterized constructors as required.
+A public class Solution is already created with the main method. 
+Code inside the main method should not be altered else your solution might be scored as zero.
+You may copy the code from the main method in Eclipse to verify your implementation.
+Implement static method – medicinePriceForGivenDisease in Solution class. 
+This method will take a String parameter named disease along with the other parameter as an array of 
+Medicine objects. The method will return an array of integers containing the price of the medicines in
+ascending order if the given input(disease) matches the disease attribute of the medicine objects in the Array.
+Note: 
+1) Same disease can have more than one medicine.
+2) disease search should be case insensitive.
+This method should be called from the main method and display the prices.
+The main method mentioned above already has Scanner code to read values, create objects, 
+and test the above methods. Hence do not modify it.
+
+eq
+
+Disease = Fever
+
+Medicine Objects:
+
+1. Paracetemol, F20, Fever, 120
+2. Thyox, GGG9, Thyroid, 780
+3. No-Fev, GR2, fever, 59
+4. RashFree, W720, Skin Rash, 78
+5. Hypo Fever, 788x, FEVER, 98
+
+o/p
+
+59
+98
+120
