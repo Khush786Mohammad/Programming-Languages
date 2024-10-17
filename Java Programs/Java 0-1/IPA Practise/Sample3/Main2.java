@@ -35,5 +35,6 @@ public class Main2{
             default:
             System.out.println("Invalid Operation");
         }
+        sc.close();
     }
 }

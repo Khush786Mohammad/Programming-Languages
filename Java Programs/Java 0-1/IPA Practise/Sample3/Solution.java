@@ -139,5 +139,6 @@ public class Solution {
 
             System.out.println("Id: "+id+", Name: "+name+", Designation: "+designation+", Salary: "+salary);
         }
+        sc.close();
     }
 }

@@ -33,6 +33,7 @@ public class Main1{
         }
         else
         System.out.println("Invalid Range");
+        sc.close();
     }
 
     public static int findIndex(int[] arr, int elem){
