@@ -1,0 +1,195 @@
+Problem1:
+
+Create a class Player with below attributes: 
+
+playerId - int 
+skill - String 
+level - String 
+points - int
+
+Write getters, setters and parameterized constructor in the above mentioned attribute 
+sequence as required.
+
+Create class Solution with the main method.
+
+Implement two static methods - findPointsForGivenSkill and getPlayerBasedOnLevel in Solution class.
+
+findPointsForGivenSkill method: 
+------------------------------------
+This method will take two input parameters - array of Player objects 
+and string parameter skill. The method will return the sum of the points attribute from player objects 
+for the skill passed as parameter. If no player with the given skill is present in the array of player 
+objects, then the method should return 0.
+
+getPlayerBasedOnLevel method: 
+-------------------------------------
+This method will take two String parameters level and skill, along with the array of Player objects. 
+The method will return the player object, if the input String parameters matches with the level and 
+skill attribute of the player object and its point attribute is greater than or equal to 20. If any 
+of the conditions are not met, then the method should return null.
+
+Note : No two player object would have the same value for skill and level attribute. All player object 
+would have the points greater than 0. All the searches should be case insensitive.
+
+These above mentioned static methods should be called from the main method.
+
+For findPointsForGivenSkill method - The main method should print the points as it is if the returned 
+price is greater than 0, or it should print "The given Skill is not available".
+
+For getPlayerBasedOnLevel method - The main method should print the playerId of the returned player object.
+If the returned value is null then it should print "No player is available with specified level, skill 
+and eligibility points".
+
+Before calling these static methods in main, use Scanner object to read the values of four Player objects 
+referring attributes in the above mentioned attribute sequence. Next, read the value for skill and level.
+Please consider the skill value read above as skill parameter for both the static methods.
+
+Input:
+-----------
+101
+Cricket
+Basic
+20
+102
+Cricket
+Intermediate
+25
+111
+Football
+Intermediate
+50
+113
+BaseBall
+Advanced
+100
+Cricket
+Intermediate
+
+Output:
+--------------
+45
+102
+
+-----------------------------------------------------------------------------------------------------
+
+Problem2:
+
+Create class Medicine with below attributes: 
+
+MedicineName - String 
+batch - String 
+disease - String 
+price - int
+
+Create class Solution and implement static method "getPriceByDisease" in the Solution class. 
+This method will take array of Medicine objects and a disease String as parameters. 
+And will return another sorted array of Integer objects where the disease String matches with the 
+original array of Medicine object's disease attribute (case insensitive search).
+
+Write necessary getters and setters.
+
+Before calling "getPriceByDisease" method in the main method, read values for four Medicine objects 
+referring the attributes in above sequence along with a String disease. Then call the "getPriceByDisease" 
+method and print the result.
+
+Input
+-------------
+
+dolo650
+FAC124W
+fever
+100
+paracetamol
+PAC545B
+bodypain
+150
+almox
+ALM747S
+fever
+200
+aspirin
+ASP849Q
+flu
+250
+fever
+
+Output
+---------
+100
+200
+
+---------------------------------------------------------------------------
+
+Problem3:
+
+Create a class AutonomousCar with the below attributes:
+
+carld – int
+brand – String 
+noOfTestsConducted – int
+noOfTestsPassed- int
+environment – String
+
+Write getters, setters for the above attributes . Create constructor which takes parameter in the above sequence 
+except grade.
+
+Create class Solution with main method. Implement two static methods – findTestPassedByEnv and updateCarGrade in 
+Solution class.
+
+findTestPassedByEnv method:
+
+This method will take two input parameters -array of AutonomousCar objects and string parameter environment. The method 
+will return the sum of the noOfTestsPassed attribute from autonomousCar objects for the environment passed as parameter. 
+If no autonomousCar with the given environment is present in the array of AutonomousCar objects, then the method should 
+return 0.
+
+updateCarGrade method:
+
+This method will take a String parameter brand, along with the array of AutonomousCar objects. The method will return 
+the autonomousCar object, if the input String parameter matches with the brand attribute of the autonomousCar object. 
+Before returning the object, the grade should be derived based on the rating calculation mentioned below. This grade 
+value should be assigned to the object. If any of the above conditions are not met, then the method should return null. 
+The grade attribute should be calculated as follows: rating .(noOfTestsPassed * 100)/noOfTestsConducted 
+If the rating > = 80 then grade should be ‘A1’, otherwise the grade should be ‘B2’.
+
+The above mentioned static methods should be called from the main method. For findTestPassedByEnv method – The main 
+method should print the totalTestPassed as it is, if the returned value is greater than 0, or it should print “There 
+are no tests passed in this particular environment”.
+
+For updateCarGrade method – The main method should print the brand and grade of the returned autonomousCar object. 
+The brand and grade should be concatinated with :: while printing. eg:- Tesla::A1, where Tesla is the brand and Al 
+is the grade.
+
+If the returned value is null then it should print “No Car is available with the specified brand”. Before calling these 
+static methods in main, use Scanner object to read the values of four autonomousCar objects referring attributes in the 
+above mentioned attribute sequence (except grade attribute). Next, read the value for environment and brand.
+
+Input
+----------------
+100
+Tesla
+1000
+500
+Hills
+200
+Ford
+2000
+1500
+Desert
+300
+Royce
+3000
+1700
+Hills
+400
+Mercedez
+1000
+400
+Desert
+Desert
+Mercedez
+
+Output
+-----------
+1900
+Mercedez::B2
