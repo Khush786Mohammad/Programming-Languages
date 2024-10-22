@@ -1,0 +1,187 @@
+Create class Movie with below attributes: 
+
+movieName - String 
+company - String 
+genre - String 
+budget - int
+
+Create class Solution and implement static method "getMovieByGenre" in the Solution class. This method will 
+take array of Movie objects and a searchGenre String as parameters. And will return another array of Movie 
+objects where the searchGenre String matches with the original array of Movie object's genre attribute 
+(case insensitive search).
+
+Write necessary getters and setters.
+
+Before calling "getMovieByGenre" method in the main method, read values for four Movie objects referring the 
+attributes in above sequence along with a String searchGenre. Then call the "getMovieByGenre" method and write
+logic in main method to print "High Budget Movie",if the movie budget attribute is greater than 80000000 else 
+print "Low Budget Movie".
+
+Input
+---------
+aaa
+Marvel
+Action
+250000000
+bbb
+Marvel
+Comedy
+25000000
+ccc
+Marvel
+Comedy
+2000000
+ddd
+Marvel
+Action
+300000000
+Action
+
+Output
+-------------------
+High Budget Movie
+High Budget Movie
+
+----------------------------------------------------------------------------------------------------------
+
+Problem2:
+
+Create a class Phone with below attributes: 
+
+phoneId - int 
+os - String 
+brand - String 
+price - int
+
+Write getters, setters and parameterized constructor in the above mentioned attribute sequence as required.
+
+Create class Solution with main method.
+
+Implement two static methods - findPriceForGivenBrand and getPhoneIdBasedOnOs in Solution class.
+
+findPriceForGivenBrand method: 
+----------------------------------
+This method will take two input parameters - array of Phone objects and string 
+parameter brand. The method will return the sum of the price attribute from phone objects for the brand passed 
+as parameter. If no phones with the given brand is present in the array of phone objects, then the method should 
+return 0.
+
+getPhoneIdBasedOnOs method: 
+----------------------------------
+This method will take a String parameter os, along with the array of Phone objects. 
+The method will return the phone object, if the input String parameter matches with the os attribute of the phone 
+object and its price attribute is greater than or equal to 50000. If any of the conditions are not met, then the 
+method should return null.
+
+Note : No phone object would have the same value for os attribute. All phone object would have the price greater than 0. 
+All the searches should be case insensitive.
+
+These above mentioned static methods should be called from the main method.
+
+For findPriceForGivenBrand method - The main method should print the price as it is if the returned price is greater 
+than 0, or it should print "The given Brand is not available".
+
+For getPhoneIdBasedOnOs method - The main method should print the phoneId of the returned phone object. If the returned 
+value is null then it should print "No phones are available with specified os and price range".
+
+Before calling these static methods in main, use Scanner object to read the values of four Phone objects referring 
+attributes in the above mentioned attribute sequence. Next, read the value for brand and os.
+
+Input
+--------------
+111
+iOS
+Apple
+30000
+222
+android
+Samsung
+50000
+333
+Symbian
+HTC
+12000
+444
+Paranoid
+HTC
+89000
+Blackberry
+aNdRoid
+
+Output
+------------------
+The given Brand is not available
+222
+
+---------------------------------------------------------------------------------------------
+
+Problem3:
+
+Create a class NavalVessel with the below attributes:
+
+vesselld – int
+vesselName – String
+noOfVoyagesPlanned – int
+noOfVoyagesCompleted – int
+purpose – String
+
+
+Write getters, setters for the above attributes. Create constructor which takes parameter in the above 
+sequence except classification.
+
+Create class Solution with main method. Implement two static methods – findAvgVoyagesByPct and findVesselByGrade 
+in Solution class.
+
+findAvgVoyagesByPct method:
+
+This method will take two input parameters -array of NavalVessel objects and int parameter percentage. The method will 
+return the average of the noOfVoyagesCompleted attribute from NavalVessel objects which meets the percentage requirement 
+as mentioned below.The percentage for each navalVessel is calculated as 
+percentage .(noOfVoyagesCompleted * 100)/noOfVoyagesPlanned. If the above calculated percentage is greater than or equal 
+to the percentage passed as the parameter, then those objects should participate in the average calculation. If there are 
+no objects with the mentioned criteria, then the method should return 0.
+
+findVesselByGrade method:
+
+This method will take a String parameter purpose, along with the array of NavalVessel objects. The method will return the 
+NavalVessel object, if the input String parameter matches with the purpose attribute of the NavalVessel object. Before 
+returning the object, the classification should be derived as mentioned below. This classification value should be assigned 
+to the object before returning. If any of the above conditions are not met, then the method should return null. The 
+classification attribute should be calculated based on the percentage calculation mentioned above. 
+If the percentage = 100 then classification should be ‘Star’, if percentage is between 99 and 80 then classification should 
+be ‘Leader, if percentage is between 79 and 55 then classification should be ‘Inspirer' otherwise the classification should 
+be ‘Striver’ If the returned value is null then it should print “No Naval Vessel is available with the specified purpose”.
+
+Before calling these static methods in main, use Scanner object to read the values of four NavalVessel objects referring 
+attributes in the above mentioned attribute sequence (except the classification attribute). Next, read the value for 
+percentage and purpose.
+
+Input
+-------------------
+111
+Rojer
+100
+100
+Passenger
+222
+Kalam
+200
+100
+Goods
+333
+Yashwin
+400
+300
+Army
+444
+Thanishwini
+500
+500
+Welfare
+75
+Army
+
+Output
+------------------
+300
+Yashwin%Inspirer
