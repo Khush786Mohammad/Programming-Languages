@@ -11,6 +11,13 @@ public class Main{
         else{
             System.out.println("False");
         }
+
+        if(3 == 03){
+            System.out.println("yes");
+        }
+        else{
+            System.out.println("No");
+        }
         sc.close();
     }
 
