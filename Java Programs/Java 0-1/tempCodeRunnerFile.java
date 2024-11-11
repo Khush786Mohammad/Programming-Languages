@@ -1,1 +1,3 @@
-BufferedWriter bw = new BufferedWriter(new FileWriter(file));
+BigInteger bigValue = sc.nextBigInteger();
+        BigInteger ans = factorial(bigValue);
+        System.out.println(ans);
