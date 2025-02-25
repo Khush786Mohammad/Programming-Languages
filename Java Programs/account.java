@@ -18,7 +18,7 @@ public class account
           System.out.println("Account No = "+acc_no);
           System.out.println("Account Holder = "+name);
           System.out.println("Balance = "+balance);
-          System.out.println("Account Type = ",acc_type);
+          System.out.println("Account Type = "+acc_type);
     }
     void withdrawl(float amount)
     {
